@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Златоустовское Телевидение
+    link(rel="stylesheet" href="css/style.css")
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css')
+    script(src='https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js')
+    script.
+      document.addEventListener('DOMContentLoaded', function() {
+        $('.select2').select2();
+      });
+    body
+        div
+          h1 Все новости
+            h2 Главная / Новости
+
+            .container
+                .date-select
+                  input(type='text' id='datepicker')
+                  i.calendar-icon
+                  i.arrow-icon
+
+          .category-select
+            select.select2
+              option(value='' disabled selected) Выбрать рубрику
+              option(value='category1') Категория 1
+              option(value='category2') Категория 2
+              option(value='category3') Категория 3
+
+    

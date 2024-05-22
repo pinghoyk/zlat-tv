@@ -1,0 +1,19 @@
+@media (max-width: 360px) {
+  main {
+    padding: 0 24px;
+  }
+  main .main__section__article .article__img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+  main .main__section__article .article__button {
+    width: 100%;
+  }
+  main .main__section__news .news-card {
+    width: 100%;
+  }
+  main .main__section__news .news-button {
+    width: 100%;
+  }
+}

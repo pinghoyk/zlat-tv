@@ -1,0 +1,127 @@
+header {
+  margin-top: 5.3%;
+}
+header .header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header__menu .header__button {
+  width: 13.2%;
+  height: 50px;
+  border-radius: 56px;
+  border: 2px solid #9F0023;
+  color: #9F0023;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+header .header__menu .header__button:hover {
+  background-color: #9F0023;
+  color: #fff;
+}
+header .header__phone-and-search {
+  display: flex;
+  align-items: center;
+}
+header .header__phone-and-search .header__phone {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  padding-right: 44px;
+}
+header .header__phone-and-search .header__phone:hover {
+  color: #9F0023;
+}
+header .header__phone-and-search .header__search {
+  width: 18px;
+  height: 18px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 0 20px;
+}
+nav .nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav__list .nav__link {
+  display: flex;
+  align-items: center;
+  padding-right: 48px;
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 400;
+  line-height: 27px;
+  padding: 10px 18px;
+  position: relative;
+}
+nav .nav__list .nav__link .arrow {
+  margin-left: 8px;
+  font-size: 12px;
+}
+nav .nav__social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+nav .nav__social-icons .social-icons__item {
+  padding-left: 16px;
+}
+nav .nav__link {
+  display: flex;
+  align-items: center;
+  padding-right: 48px;
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 400;
+  line-height: 27px;
+  padding: 10px 18px;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 2px solid #373334;
+  border-bottom: none;
+}
+
+.dropdown-content a {
+  color: #373334;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 2px solid #373334;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+.dropdown-content a:hover {
+  color: #9F0023;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.site-line {
+  width: 100%;
+  text-align: center;
+  height: 4px;
+  min-height: 2px;
+  max-height: 4px;
+  background: #373334;
+  margin: 0 auto;
+}
+
+.header__burger-menu, .header__notifications {
+  display: none;
+}

@@ -1,0 +1,23 @@
+@import "header";
+@import "header-mobile";
+@import "main";
+@import "main-mobile";
+@import "footer";
+@import "news-layout";
+
+
+* {
+  font-family: "New Frank", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #373334;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+body {
+  background-color: #F2F2F2;
+  margin: 0 10% 0;
+}
+

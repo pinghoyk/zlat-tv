@@ -1,0 +1,27 @@
+@media (max-width: 360px) {
+  main {
+    padding: 0 24px; // Отступы для мобильной версии
+
+    .main__section__article {
+      .article__img {
+        width: 100%; // Изображение на всю ширину в мобильной версии
+        max-width: none;
+        height: auto;
+      }
+
+      .article__button {
+        width: 100%; // Кнопка на всю ширину экрана в мобильной версии
+      }
+    }
+
+    .main__section__news {
+      .news-card {
+        width: 100%; // Карточки на всю ширину экрана в мобильной версии
+      }
+
+      .news-button {
+        width: 100%; // Кнопка на всю ширину экрана в мобильной версии
+      }
+    }
+  }
+}

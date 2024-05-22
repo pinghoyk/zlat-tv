@@ -1,0 +1,94 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Златоустовское Телевидение
+    link(rel="stylesheet" href="css/style.css")
+    script(src="js/script.js")
+  body
+    main
+      section.main__section__article
+        div.article__img-wrapper
+          img.article__img(src="img/biatlon.png" alt="Изображение биатлона")
+        div.section__article-text
+          p.section__article-tags Общество
+          h2.article__text Гонка сильнейших. На стадионе имени Светланы Ишмуратовой стартовал Чемпионат по биатлону
+          button.article__button Читать
+      div.site-line
+
+      section.main__section__news
+          div.div__news
+            h1 Свежие новости
+            button.news-button Все новости
+          .news-container
+            .news-cards
+              each newsItem in news
+                .news-card
+                  img.card-image(src=newsItem.image, alt="Изображение")
+                  .card-details
+                    p.content-tags= newsItem.tags
+                    p.card-date= newsItem.date
+                  h3.card-text= newsItem.text
+                  a(href="")
+                    img(src=newsItem.linkImage, alt=newsItem.linkAlt)
+          .news-image
+            img.logo-gray(src="img/logo-gray.png" alt="")
+          .site-line
+
+      section.vector-section
+        .vector-heading
+          h1 Вектор развития
+          div
+            img(src="img/vector_left.png", alt="стрелка влево")
+            img.vector_arrow(src="img/vector_right.png", alt="стрелка вправо")
+        .vector-cards
+          .vector-card
+            img.vector(src="img/image_60.png", alt="Изображение")
+            p.content-tags 19/01/2021
+            h3.card-text Спортивный центр, доступный для всех жителей города и района метзавода. Бассейн «Сталь» теперь стал муниципальным
+            a(href="")
+              img(src="img/arrow.png", alt="Изображение")
+          .vector-card
+            img.vector(src="img/image_61.png", alt="Изображение")
+            p.content-tags 15/01/2021
+            h3.card-text Условия для воспитания и образования в Златоусте – одно из приоритетных направлений
+            a(href="")
+              img(src="img/arrow.png", alt="Изображение")
+          .vector-card
+            img.vector(src="img/image_62.png", alt="Изображение")
+            p.content-tags 24/12/2020
+            h3.card-text Реализовали давно задуманные планы. На златоустовском «Заводе «Стройтехника» открылся ещё один производственный корпус
+            a(href="")
+              img(src="img/arrow.png", alt="Изображение")
+        button.vector-button Больше новостей
+
+      .gray-video
+        .gray-container
+          .video-table-container
+            .video-column
+              h1 Премьерные выпуски
+              .video-container
+                video(controls)
+                  source(src="https://www.youtube.com/live/rLRI1KVIAyY?si=4ZzJXYFmhxH9pZjN", type="video/mp4")
+                  | Ваш браузер не поддерживает видео.
+              button.gray-button Все выпуски
+            .table-column
+              .gray-table
+                .bold-white-line
+                .gray-films
+                  p 02/01/2021
+                  h3 «Территория закона» 26.01.2021
+                  a(href="")
+                    img.white-arrow(src="img/white_arrow.png", alt="Изображение медицины")
+                .bold-white-line
+                .gray-films
+                  p 02/01/2021
+                  h3 «Сделано в Златоусте» №1 (Никон)
+                .white-line
+                .white-line
+                .gray-films
+                  p 02/01/2021
+                  h3 «Депутатский час» 22.01.2021
+                .white-line
+

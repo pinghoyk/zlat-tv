@@ -1,0 +1,116 @@
+@media (max-width: 360px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .header__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .header__burger-menu,
+  .header__notifications {
+    display: block;
+  }
+
+  .header__burger-menu {
+    border: none;
+    background: none;
+  }
+
+  .header__button,
+  .header__phone,
+  .header__search {
+    display: none;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  .header__phone-and-search {
+    display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__nav.active {
+    display: block;
+  }
+
+  .site-line {
+    height: 2px;
+    margin: 0 auto;
+  }
+
+  .nav__link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    padding: 10px 0;
+    &:hover {
+      color: #9F0023; // Измените цвет на желаемый при наведении
+      font-weight: bold;
+    }
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dropdown-content {
+    position: relative;
+    min-width: auto;
+    box-shadow: none;
+    border: none;
+    background-color: #F2F2F2;
+  }
+
+  .dropdown-content a {
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .dropdown-content a.active {
+    color: #9F0023;
+  }
+
+  .nav__social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+  }
+
+  p.nav__link {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .nav__social--icons-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .social-icons__item {
+    margin: 0 6px;
+    text-align: center;
+  }
+}
